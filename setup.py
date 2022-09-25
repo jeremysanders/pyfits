@@ -7,7 +7,6 @@ import numpy
 
 import setuptools
 from setuptools import setup, Extension
-from distutils.command.install_data import install_data
 
 datafiles = [os.path.basename(x) for x in glob.glob('tests/*.fits')]
 
