@@ -24,7 +24,7 @@
 #include <direct.h>   /* defines the getcwd function on Windows PCs */
 #endif
 
-#if defined(unix) || defined(__unix__)  || defined(__unix)
+#if defined(unix) || defined(__unix__)  || defined(__unix) || (defined(__APPLE__) && defined(__MACH__))
 #include <unistd.h>  /* needed for getcwd prototype on unix machines */
 #endif
 
